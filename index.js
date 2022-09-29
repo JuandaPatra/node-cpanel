@@ -13,4 +13,8 @@ app.get('/demo', (req,res)=>{
 })
 
 
+app.get('/test', (req,res)=>{
+    res.status(200).sed(`<h1>Test page</h1>`)
+})
+
 app.listen(PORT, ()=> console.log(`magic happens in PORT : ${PORT}`))
